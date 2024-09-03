@@ -35,25 +35,13 @@ def crear_carpetas():
                 )
             else:
                 continue
-    print(f"Carpetas para los Tribunales de {carpeta["nombre"]} creadas para con éxito")
+    print(f"Carpetas para los Tribunales de {carpeta["nombre"]} creadas con éxito")
 
 
 def crear_carpeta(nombre, numero_tribunal):
     nombre_carpeta = f"Compartida Tribunal {numeros[str(numero_tribunal)]} {nombre}"
     os.mkdir(f"C:/{nombre_carpeta}")
     return nombre_carpeta
-
-
-""" nombre_carpetas = input(
-    "Ingrese el nombre de la dependencia de las cuales necesita crear las carpetas (Por ejemplo: Control Ordinario): "
-)
-
-cantidad_carpetas = input(
-    f"Ingrese la cantidad de tribunales de {nombre_carpeta} que necesita crear: "
-)
-
-agregar_carpetas(nombre_carpetas, cantidad_carpetas)
-crear_carpetas() """
 
 
 def grupo_carpetas():
